@@ -1,0 +1,28 @@
+name: 'GCP Storage'
+description: 'This action helps in uploading and downloading files from the Google Cloud Storage Bucket.'
+author: 'Convictional'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+inputs:
+  source_file:
+    description: "The file path that the file will be sourced from. This can be either a local file or GCP storage file. GCP storage file should lead with gs://."
+    required: true
+  destination_file:
+    description: "The file path that the file will be uploaded to. This can be either a local file or GCP storage file."
+    required: true
+  application_credentials:
+    description: "These are the IAM credentials for accessing the GCP bucket."
+    required: false
+  project_id:
+    description: "The project id that the bucket lives under."
+    required: false
+  action:
+    description: "The action to be performed. This defaults to cp and isnt implemented yet."
+    required: false
+  flags:
+    description: "Additional flags to be passed in."
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
