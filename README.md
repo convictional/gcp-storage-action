@@ -15,10 +15,10 @@ Simple action for uploading and downloading file with GCP storage.
 ```
 - uses: convictional/gcp-storage-action@master
   with:
-  source_file: ./local_file.txt
-  destination_file: gs://yourbucket/folder/local_file.txt
-  application_credentials: ${{ secrets.GCP_AUTH }}
-  project_id: myproject_on_gcp
+    source_file: ./local_file.txt
+    destination_file: gs://yourbucket/folder/local_file.txt
+    application_credentials: ${{ secrets.GCP_AUTH }}
+    project_id: myproject_on_gcp
 ```
 
 ## Development
