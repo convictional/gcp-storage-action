@@ -1,3 +1,5 @@
+Update January 2026: This repository is now archived. 
+
 # GCP Storage Action
 
 Simple action for uploading and downloading file with GCP storage.
